@@ -168,9 +168,7 @@
     sleep 3
 
     source conf/pool.conf
-    if [ ! -f /etc/apt/sources.list.d/ondrej-php-bionic.list ]; then
     sudo add-apt-repository -y ppa:ondrej/php
-    fi
     sudo apt -y update
 
     if [[ ("$DISTRO" == "16") ]]; then
